@@ -95,6 +95,8 @@ search.addEventListener('keydown',(event)=>{
   }
 });
 
+//notification creation
+
 chrome.alarms.onAlarm.addListener(function(){
   chrome.browserAction.setBadgeText({text:''});
   chrome.notifications.create({
