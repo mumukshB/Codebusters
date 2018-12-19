@@ -1,5 +1,7 @@
 chrome.storage.sync.set({'count':0});
 
+//Initializing a folder for bookmarks when the extension is loaded
+
 chrome.bookmarks.getChildren('1', function(children) {
   var flag=1;
     for (var i = 0; i < children.length; i++) {
