@@ -1,0 +1,20 @@
+{
+  "name": "Codebusters",
+  "description": "Practice coding in a lucid and efficient manner.",
+  "version": "1.0",
+  "permissions": [
+    "activeTab","notifications","alarms","bookmarks","storage","background","tabs"
+  ],
+  "browser_action": {
+      "default_title": "Codebusters",
+      "default_popup":"popup.html",
+      "default_icon": {"512":"images/five.png"}
+
+  },
+  "background":{
+    "scripts":["background.js"],
+    "persistant":false
+  }
+  ,
+  "manifest_version": 2
+}
